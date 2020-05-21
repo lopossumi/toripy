@@ -53,7 +53,7 @@ def main():
     # Post version 12 this will no longer be necessary
     with open('telegram.token', 'r') as tokenFile:
         token = tokenFile.read()
-    updater = Updater("1066900487:AAEE64tG8saC_9gmO8BKMRpEBjHXIyF06BU", use_context=True)
+    updater = Updater(token, use_context=True)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
