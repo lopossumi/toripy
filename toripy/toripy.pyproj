@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8fe09131-d43b-4e4e-bc47-54fb5be431be</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>toripy.py</StartupFile>
+    <StartupFile>telegrambot.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>toripy</Name>
     <RootNamespace>toripy</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="telegrambot.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SalesItem.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="toripy.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="telegram.token" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
